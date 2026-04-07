@@ -1,4 +1,5 @@
 
+
 function fibs(Num_of_fibs){
      let n1 = 0;
      let n2 = 1;
@@ -15,13 +16,11 @@ function fibs(Num_of_fibs){
 }
 
 function recurfibs(Num_of_fibs){
-    let n1 = 0;
-    let n2 = 1;
-    let n3 = 0;
-    n3 = n1+n2;
-    n1=n2;
-    n2=n3;
-    recurfibs;
-    return n1;
+    console.log("This was printed recursively");
+    if (Num_of_fibs == 1)
+        return 0;
+    if(Num_of_fibs == 2)
+        return 1;
+    return recurfibs(Num_of_fibs- 1) +  recurfibs(Num_of_fibs -2);
 }
- console.log(fibs(8));
+ console.log(recurfibs(8));
